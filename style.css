@@ -1,0 +1,34 @@
+
+body{
+    background-color: black;
+    color: yellow;
+}
+
+.flex-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+@media screen and (max-width: 1000px){
+    body{
+        background-color: violet; flex-direction: column; color: purple;
+    }
+
+    .flex-container{
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+
+@media screen and (max-width: 600px){
+    body{
+        background-color: yellow; color: black;
+    }
+    .flex-container{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+}
